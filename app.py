@@ -246,7 +246,7 @@ with tab1:
 
     with col1:
         st.title('Máxima e Mínimo')
-        chart_data = pd.DataFrame(estatistica, columns=["Maxima", "Minima"])
+        chart_data = pd.DataFrame(estatistica, columns=["Maximo", "Minimo"])
         st.area_chart(chart_data)
 
     with col2:
