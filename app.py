@@ -70,12 +70,12 @@ with tab2:
 
     col1, col2 = st.columns(2)
     with col1:
-        st.write('Piores Dias Historicos')
+        st.write('Piores Anos Historicos')
         st.table(melhores_dias.set_index('Data'))
         st.write('É possivel ver que tanto a alta historica quanto a baixa ocorrem em períodos especificos mostrando pouca flutuação de preço. Também é possível notar que em 21/04/2021 foi registrado a segunda pior baixa histórica.')
 
     with col2:
-        st.write('Melhores dias Historicos')
+        st.write('Melhores Anos Historicos')
         st.table(piores_dias.set_index('Data'))
 
     st.divider()
@@ -230,11 +230,11 @@ with tab1:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.title('Melhores Dias')
+        st.title('Melhores Anos')
         st.bar_chart(melhores_dias, x='Anos', y='Preço - petróleo bruto - Brent (FOB)', color='#093667')
 
     with col2:
-        st.title('Piores Dias')
+        st.title('Piores Anos')
         st.bar_chart(piores_dias, x='Anos', y='Preço - petróleo bruto - Brent (FOB)', color='#093667')
 
 
@@ -246,7 +246,7 @@ with tab1:
 
     with col1:
         st.title('Máxima e Mínimo')
-        chart_data = pd.DataFrame(estatistica, columns=["Maximo", "Minimo"])
+        chart_data = pd.DataFrame(estatistica, columns=["Maxima", "Minima"])
         st.area_chart(chart_data)
 
     with col2:
