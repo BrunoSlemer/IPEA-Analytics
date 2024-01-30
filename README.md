@@ -4,6 +4,8 @@
 
 ### MVP do modelo no [streamlit](https://ipea-analytics-fiap-1dtat.streamlit.app/?embed_options=dark_theme)
 
+#### [Github](https://github.com/BrunoSlemer/IPEA-Analytics)
+
 A raspagem dos dados foi feita manualmente a cada 7 dias utilizando o beutifulsoup, está incluso no Script_Scraping.
 
 O dataframe estatistiscas_por_ano foi derivado do ipea.csv e foi utilizado para aperfeiçoar a análise.
